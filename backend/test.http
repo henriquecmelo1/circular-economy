@@ -6,9 +6,8 @@ Content-Type: application/json
 
 {
     "nome": "henrique",
-    "email": "hcm@cin.br",
-    "mensagem": "estou enviando um email 2 de teste"
-
+    "email": "hcm@cin.ufpe.br",
+    "mensagem": "Teste de envio de email Nodemailer"
 }
 
 ###
@@ -25,7 +24,7 @@ Content-Type: application/json
 
 {
     "nome": "henrique",
-    "email": "hcm@cin.br",
+    "email": "hcm@cin.ufpe.br",
     "mensagem": "Mensagem editada"
 }
 

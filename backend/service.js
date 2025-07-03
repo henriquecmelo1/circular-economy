@@ -1,5 +1,5 @@
 import { sql } from './db.js';
-
+import { sendEmail } from './email.js';
 
 
 export async function create(formulario) {
@@ -9,6 +9,8 @@ export async function create(formulario) {
             VALUES (${nome}, ${email}, ${mensagem})
             RETURNING id
         `;
+    // Envia o email de confirmação
+    await sendEmail({ nome, email, mensagem });
     return result[0].id;
 }
 
