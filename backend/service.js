@@ -22,8 +22,12 @@ export async function getById(id) {
 }
 
 export async function update(formulario) {
-    const { id, nome, email, mensagem } = formulario;
-    await sql`
+    const {nome, email, mensagem, id } = formulario;
+    if (!id) {
+        throw new Error("ID do formulário é necessário para atualização");
+    }
+
+    return await sql`
             UPDATE formularios
             SET nome = ${nome}, email = ${email}, mensagem = ${mensagem}
             WHERE id = ${id}

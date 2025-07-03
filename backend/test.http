@@ -1,34 +1,4 @@
-# POST http://localhost:3000/items
-# Content-Type: application/json
 
-# {
-#     "task":"Teste",
-#     "completed": true
-
-# }
-
-# ### 
-
-# GET http://localhost:3000/items
-
-# ### 
-
-# GET http://localhost:3000/items/684c964929d88a62229d2321
-
-# ###
-
-# PUT http://localhost:3000/items/684c963c29d88a62229d2320
-# Content-Type: application/json
-
-# {
-#     "task": "Express",
-#     "completed": false
-
-# }
-
-# ###
-
-# DELETE  http://localhost:3000/items/684ff1f2863c65dfd3d76020
 
 
 POST http://localhost:3000/formularios
@@ -36,11 +6,28 @@ Content-Type: application/json
 
 {
     "nome": "henrique",
-    "email": "hcmelo@cin.br",
-    "mensagem": "estou enviando um email de teste"
+    "email": "hcm@cin.br",
+    "mensagem": "estou enviando um email 2 de teste"
 
 }
 
 ###
 
 GET http://localhost:3000/formularios
+
+###
+
+GET http://localhost:3000/formularios/3
+
+###
+PUT http://localhost:3000/formularios/3
+Content-Type: application/json
+
+{
+    "nome": "henrique",
+    "email": "hcm@cin.br",
+    "mensagem": "Mensagem editada"
+}
+
+###
+DELETE http://localhost:3000/formularios/1
