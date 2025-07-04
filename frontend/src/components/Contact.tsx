@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     alert(`Obrigado, ${formData.name}! Sua mensagem foi recebida.`);
     console.log('Dados do formulário:', formData);
-    //mandar request para o backend 
+    
     setFormData({ name: '', email: '', message: '' }); // limpa o formulário
   };
 
