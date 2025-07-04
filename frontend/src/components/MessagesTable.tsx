@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 // Importando os mesmos estilos, pois as classes CSS são usadas aqui
-import styles from '../styles/MessagesBox.module.css';
+import styles from '../styles/MessagesTable.module.css';
 
 // A interface define o formato dos dados que este componente espera receber
 interface Message {
   id: number;
-  name: string;
+  nome: string;
   email: string;
-  message: string;
-  sentAt: Date;
+  mensagem: string;
+  data_envio: string;
 }
 
 // 1. Defina as props que o componente vai receber
@@ -30,6 +30,7 @@ const MessagesTable: React.FC<MessagesTableProps> = ({ messages }) => {
     <table className={styles.messagesTable}>
       <thead>
         <tr>
+          <th>ID</th>
           <th>Nome</th>
           <th>Email</th>
           <th>Mensagem</th>
@@ -47,16 +48,14 @@ const MessagesTable: React.FC<MessagesTableProps> = ({ messages }) => {
 
           return (
             <tr key={msg.id} onClick={() => handleRowClick(msg.id)} className={styles.messageRow}>
-              <td>{msg.name}</td>
+              <td>{msg.id}</td>
+              <td>{msg.nome}</td>
               <td>{msg.email}</td>
               <td className={messageCellClasses}>
-                {msg.message}
+                {msg.mensagem}
               </td>
               <td>
-                {msg.sentAt.toLocaleDateString('pt-BR', {
-                  day: '2-digit', month: '2-digit', year: 'numeric',
-                  hour: '2-digit', minute: '2-digit',
-                })}
+                {msg.data_envio}
               </td>
             </tr>
           );
