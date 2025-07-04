@@ -1,13 +1,13 @@
 
 
 
-POST http://localhost:3000/formularios
+POST https://circular-economy.onrender.com/formularios
 Content-Type: application/json
 
 {
     "nome": "henrique",
     "email": "hcm@cin.ufpe.br",
-    "mensagem": "Teste de envio de email Nodemailer",
+    "mensagem": "Teste de envio pelo deploy",
     "data_envio": "2023-10-01T12:00:00Z"
 }
 
