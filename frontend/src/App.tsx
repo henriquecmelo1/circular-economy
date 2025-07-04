@@ -1,21 +1,20 @@
-import Hero from './components/Hero'
 import './App.css'
-import CorePrinciples from './components/CorePrinciples'
-import Statistics from './components/Statistics'
-import Contact from './components/Contact'
-import Header from './components/Header'
+import MessageBox from './components/MessagesBox'
+import Home from './pages/Home'
+import { Routes, Route } from 'react-router-dom'
+
 
 function App() {
-  
-  
+
+
 
   return (
     <>
-      <Header/>
-      <Hero/>
-      <CorePrinciples/>
-      <Statistics/>
-      <Contact/>
+      <Routes>
+        <Route path="/caixa-de-mensagens" element={<MessageBox />} />
+        <Route path="/" element={<Home/>} />
+        
+      </Routes>
     </>
   )
 }

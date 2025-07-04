@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Contact.module.css'; 
+import styles from '../styles/Contact.module.css'
 
 
 interface FormData {

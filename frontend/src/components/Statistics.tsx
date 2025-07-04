@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Statistics.module.css';
+import styles from '../styles/Statistics.module.css';
 
 interface Stat {
     value: string;

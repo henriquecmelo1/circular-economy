@@ -1,5 +1,5 @@
 
-import styles from './CorePrinciples.module.css';
+import styles from '../styles/CorePrinciples.module.css';
 
 interface Principle {
   icon: string;
