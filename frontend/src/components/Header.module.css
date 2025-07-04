@@ -1,0 +1,65 @@
+.siteHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 70px;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logoContainer .logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--dark-text);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logoIcon {
+  max-height: 60px;
+  margin-right: 10px;
+}
+
+.mainNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.mainNav a {
+  text-decoration: none;
+  color: var(--light-text);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.mainNav a:hover {
+  color: var(--primary-green);
+}
+
+.btnNav {
+  background-color: var(--primary-green);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btnNav:hover {
+  background-color: var(--dark-green);
+  color: white !important;
+  transform: translateY(-2px);
+}

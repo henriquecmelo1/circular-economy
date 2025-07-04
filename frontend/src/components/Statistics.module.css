@@ -1,0 +1,44 @@
+.statsSection {
+  background: var(--gradient-green-blue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.statsSection h2,
+.statsSection .sectionSubtitle {
+  color: white;
+}
+
+.statsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statCard {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.statValue {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.statLabel {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.scrollDownArrow {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: var(--light-gray);
+  text-decoration: none;
+}
