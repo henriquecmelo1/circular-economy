@@ -1,6 +1,8 @@
 import postgres from "postgres";
+import dotenv from "dotenv";
+dotenv.config();
 
-export const sql = postgres("postgresql://postgres:root@localhost:5432/CircularEconomy")
+export const sql = postgres(`postgresql://${process.env.POSTGRES_USER}:${process.env.POSTGRES_PASSWORD}@postgres:5432/${process.env.POSTGRES_DB}`)
 
 // Usuários
 
