@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
     setStatusMessage(''); // limpa mensagens anteriores
 
     try {
-      const response = await fetch('http://localhost:3000/formularios', {
+      const response = await fetch('https://circular-economy.onrender.com/formularios', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

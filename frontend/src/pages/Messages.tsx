@@ -14,7 +14,7 @@ const Messages: React.FC = () => {
   useEffect(() => {
     const fetchMessages = async () => {
 
-      const response = await fetch('http://localhost:3000/formularios');
+      const response = await fetch('https://circular-economy.onrender.com/formularios');
       if (!response.ok) {
         throw new Error(`Erro na rede: ${response.statusText}`);
       }
